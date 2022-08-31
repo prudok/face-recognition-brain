@@ -10,8 +10,8 @@
   "runtime~main.js": "/faceRecognitionBrain/static/js/runtime~main.cb40c63b.js",
   "runtime~main.js.map": "/faceRecognitionBrain/static/js/runtime~main.cb40c63b.js.map",
   "static/media/brain.png": "/faceRecognitionBrain/static/media/brain.41f3e56b.png",
-  "static/css/main.1bf75eab.chunk.css.map": "/faceRecognitionBrain/static/css/main.1bf75eab.chunk.css.map",
   "static/css/2.8536f11a.chunk.css.map": "/faceRecognitionBrain/static/css/2.8536f11a.chunk.css.map",
+  "static/css/main.1bf75eab.chunk.css.map": "/faceRecognitionBrain/static/css/main.1bf75eab.chunk.css.map",
   "index.html": "/faceRecognitionBrain/index.html",
   "precache-manifest.814533a10210d2900cb69898bb2f5cc3.js": "/faceRecognitionBrain/precache-manifest.814533a10210d2900cb69898bb2f5cc3.js",
   "service-worker.js": "/faceRecognitionBrain/service-worker.js"
