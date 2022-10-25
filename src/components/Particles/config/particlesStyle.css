@@ -1,6 +1,6 @@
 body{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background: rgb(205,38,255);
+    background: linear-gradient(90deg, rgba(205,38,255,1) 0%, rgba(0,142,255,1) 100%);
     background-attachment:fixed;
     height:100%; 
 }

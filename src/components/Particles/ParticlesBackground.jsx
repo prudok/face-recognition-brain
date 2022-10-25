@@ -5,7 +5,6 @@ import { loadFull } from "tsparticles";
 
 export default function App() {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
@@ -23,7 +22,7 @@ export default function App() {
         },
         "particles": {
             "number": {
-                "value": 25,
+                "value": 47,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -70,22 +69,22 @@ export default function App() {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 600,
+                "distance": 200,
                 "color": "#ffffff",
-                "opacity": 0.4,
+                "opacity": 0.7,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 3,
+                "speed": 0.2,
                 "direction": "none",
                 "random": false,
                 "straight": false,
-                "out_mode": "out",
+                "out_mode": "bounce",
                 "attract": {
                     "enable": false,
                     "rotateX": 800,
-                    "rotateY": 1400
+                    "rotateY": 800
                 }
             }
         },
