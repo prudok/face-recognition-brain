@@ -1,4 +1,4 @@
-# faceRecognitionBrain
+# Face Recognition Brain
 My second project written on React.js. It detects faces in your images by using Clarifai AI model. You will can register your own account in near future. Just paste image  URL address to see face detection.
 Check out this link: https://rel1nce.github.io/faceRecognitionBrain/
 Clarifai: https://www.clarifai.com/
