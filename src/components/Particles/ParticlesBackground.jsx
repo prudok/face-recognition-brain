@@ -2,18 +2,22 @@ import './config/particlesStyle.css';
 import React from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { useCallback } from "react";
 
 export default function App() {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+    const particlesInit = useCallback(async (engine) => {
+        await loadFull(engine);
+      }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+    
+  }, []);
 
-  return (
-    <div className="App">
-
+  return (  
        <Particles
       id="tsparticles"
       init={particlesInit}
+      loaded={particlesLoaded}
 
       options={{
         "fullScreen": {
@@ -22,7 +26,7 @@ export default function App() {
         },
         "particles": {
             "number": {
-                "value": 47,
+                "value": 65,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -32,7 +36,7 @@ export default function App() {
                 "value": "#fff"
             },
             "shape": {
-                "type": "none",
+                "type": "circle",
                 "options": {
                     "sides": 5
                 }
@@ -48,7 +52,7 @@ export default function App() {
                 }
             },
             "size": {
-                "value": 2,
+                "value": 1,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -69,9 +73,9 @@ export default function App() {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 200,
+                "distance": 190,
                 "color": "#ffffff",
-                "opacity": 0.7,
+                "opacity": 0.6,
                 "width": 1
             },
             "move": {
@@ -83,7 +87,7 @@ export default function App() {
                 "out_mode": "bounce",
                 "attract": {
                     "enable": false,
-                    "rotateX": 800,
+                    "rotateX": 900,
                     "rotateY": 800
                 }
             }
@@ -92,7 +96,7 @@ export default function App() {
             "events": {
                 "onhover": {
                     "enable": false,
-                    "mode": ["grab"]
+                    "mode": "grab"
                 },
                 "onclick": {
                     "enable": false,
@@ -128,6 +132,5 @@ export default function App() {
         "retina_detect": true,
     }}
     />
-    </div>
   );
 }
