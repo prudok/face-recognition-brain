@@ -9,7 +9,6 @@ export default function App() {
         await loadFull(engine);
       }, []);
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
     
   }, []);
 
@@ -26,10 +25,10 @@ export default function App() {
         },
         "particles": {
             "number": {
-                "value": 65,
+                "value": 45,
                 "density": {
                     "enable": true,
-                    "value_area": 800
+                    "value_area": 900
                 }
             },
             "color": {
@@ -73,7 +72,7 @@ export default function App() {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 190,
+                "distance": 250,
                 "color": "#ffffff",
                 "opacity": 0.6,
                 "width": 1

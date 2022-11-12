@@ -29,7 +29,7 @@ class Register extends React.Component {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 email: this.state.email,
-                password: this.state.passowrd,
+                password: this.state.password,
                 name: this.state.name
             })
         })
@@ -40,9 +40,10 @@ class Register extends React.Component {
                 this.props.onRouteChange('home');
             }
             else {
-                alert('Incorret password or login. Try again.');
+                console.log("incorrect password");
             }
         })
+        .catch(err => { console.log(err)});
     }
     render() {
     return(
@@ -81,7 +82,7 @@ class Register extends React.Component {
                     </fieldset>
                     <div className="">
                     <input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" 
-                    type="submit" 
+                    type="button" 
                     value="Register"
                     onClick={this.onSubmitSignIn}
                     />
