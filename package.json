@@ -1,6 +1,6 @@
 {
-  "name": "facerecognitionbrain",
-  "homepage": "http://rel1nce.github.io/faceRecognitionBrain",
+  "name": "face-recognition-brain",
+  "homepage": "https://rel1nce.github.io/face-recognition-brain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-notifications": "^1.7.4",
     "react-scripts": "^2.1.3",
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^2.2.4",
